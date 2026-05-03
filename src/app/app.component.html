@@ -1,70 +1,97 @@
 <div class="portfolio-wrapper">
-  <!-- Navegación Flotante -->
+
+  <!-- ===================== NAVEGACIÓN ===================== -->
   <nav class="glass-nav">
     <div class="logo">Marivick <span>.</span></div>
     <div class="nav-links">
       <a href="#hero">Inicio</a>
       <a href="#about">Sobre Mí</a>
       <a href="#skills">Skills</a>
+      <a href="#techstack">Tech Stack</a>
+      <a href="#ux-process">Proceso UX</a>
       <a href="#experience">Experiencia</a>
+      <a href="#education">Educación</a>
       <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
     </div>
   </nav>
 
   <main>
-    <!-- HERO SECTION -->
+
+    <!-- ===================== HERO ===================== -->
     <section id="hero" class="hero-grid">
       <div class="hero-text">
         <div class="social-icons">
-          <a href="https://github.com/tu-usuario" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/tu-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/tu-usuario" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:mariavyeguezp&#64;gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
+
         <span class="badge">Disponible para trabajar</span>
+
         <h1>Hola, soy <span>María Victoria</span></h1>
+
         <p class="description">
-          Ingeniera en Informática de Duoc UC. Especialista en convertir prototipos de <strong>Figma</strong> 
-          en aplicaciones reales con <strong>Angular e Ionic</strong>.
+          Ingeniera en Informática de Duoc UC. Especialista en convertir prototipos de
+          <strong>Figma</strong> en aplicaciones reales con <strong>Angular e Ionic</strong>.
+          Apasionada por el <strong>Frontend y el Diseño UX/UI</strong>.
         </p>
+
         <div class="hero-btns">
           <button class="btn-main">Descargar CV <i class="fas fa-download"></i></button>
+          <a href="#contact" class="btn-secondary">Contáctame <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
 
       <div class="hero-visual">
         <div class="blob-shape"></div>
-        <img src="assets/perfil.jpg" alt="Victoria Yeguez" class="profile-img">
+        <img src="assets/perfil.jpg" alt="María Victoria Yegüez" class="profile-img">
         <div class="floating-card c1">UX/UI</div>
         <div class="floating-card c2">Frontend</div>
       </div>
     </section>
 
-    <!-- SOBRE MÍ SECTION -->
+
+    <!-- ===================== SOBRE MÍ ===================== -->
     <section id="about">
       <div class="section-header">
         <h2>Sobre <span>Mí</span></h2>
       </div>
       <div class="about-content">
         <p>
-          Soy Ingeniera en Informática de Duoc UC, apasionada por el desarrollo de aplicaciones móviles y web. 
-          Mi enfoque principal es el <strong>Frontend y la Experiencia de Usuario (UX)</strong>, donde busco integrar 
-          diseño y funcionalidad para crear soluciones digitales que realmente aporten valor y usabilidad al usuario final.
+          Soy Ingeniera en Informática de Duoc UC, apasionada por el desarrollo de aplicaciones
+          móviles y web. Mi enfoque principal es el <strong>Frontend y la Experiencia de Usuario
+          (UX)</strong>, donde busco integrar diseño y funcionalidad para crear soluciones digitales
+          que realmente aporten valor y usabilidad al usuario final.
         </p>
-        
-        <!-- Mini Grid de Certificados -->
+        <p>
+          Me motiva entender a las personas que usan lo que construyo: desde la primera pantalla
+          hasta el último detalle visual. Trabajo bien en equipo, bajo metodología <strong>Scrum</strong>,
+          y siempre busco que el código y el diseño cuenten la misma historia.
+        </p>
+
         <div class="certifications">
-          <h3 class="vintage-title-sm">Certificaciones & Educación</h3>
+          <h3 class="vintage-title-sm">Certificaciones</h3>
           <ul class="cert-list">
-            <li><i class="fas fa-certificate"></i> Programación de Software[cite: 1]</li>
-            <li><i class="fas fa-certificate"></i> Análisis y Planificación de Requerimientos[cite: 1]</li>
-            <li><i class="fas fa-certificate"></i> Calidad de Software[cite: 1]</li>
-            <li><i class="fas fa-certificate"></i> Análisis y Desarrollo de Modelos de Datos[cite: 1]</li>
-            <li><i class="fas fa-language"></i> Inglés (Nivel Intermedio-Alto)[cite: 1]</li>
+            <li><i class="fas fa-certificate"></i> Programación de Software</li>
+            <li><i class="fas fa-certificate"></i> Análisis y Planificación de Requerimientos</li>
+            <li><i class="fas fa-certificate"></i> Calidad de Software</li>
+            <li><i class="fas fa-certificate"></i> Análisis y Desarrollo de Modelos de Datos</li>
+            <li><i class="fas fa-language"></i> Inglés — Nivel Intermedio-Alto</li>
+            <li><i class="fas fa-network-wired"></i> Cisco Python Básico</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS SECTION -->
+
+    <!-- ===================== SKILLS ===================== -->
     <section id="skills">
       <div class="section-header">
         <h2>Mis <span>Habilidades</span></h2>
@@ -73,58 +100,239 @@
         <div class="skill-card">
           <div class="icon-box">🎨</div>
           <h3>Diseño y UI</h3>
-          <p>Figma, Prototipado, Design Systems[cite: 1].</p>
+          <p>Figma, Prototipado, Design Systems, Wireframing.</p>
         </div>
         <div class="skill-card">
           <div class="icon-box">⚡</div>
           <h3>Frontend</h3>
-          <p>Angular, Ionic 7, SCSS, JavaScript[cite: 1].</p>
+          <p>Angular, Ionic 7, SCSS, JavaScript, HTML5.</p>
         </div>
         <div class="skill-card">
           <div class="icon-box">⚙️</div>
           <h3>Backend</h3>
-          <p>Python (Cisco), Django, FastAPI, SQL[cite: 1].</p>
+          <p>Python, Django, FastAPI, SQL, SQLite.</p>
         </div>
         <div class="skill-card">
           <div class="icon-box">🚀</div>
           <h3>Análisis & Data</h3>
-          <p>Power BI, ETL, Scrum y Git[cite: 1].</p>
+          <p>Power BI, ETL, Scrum, Git, Excel Avanzado.</p>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE SECTION -->
+
+    <!-- ===================== TECH STACK ===================== -->
+    <section id="techstack">
+      <div class="section-header">
+        <h2>Tech <span>Stack</span></h2>
+        <p class="section-subtitle">Las herramientas con las que construyo cada día</p>
+      </div>
+
+      <div class="techstack-wrapper">
+        <div class="tech-category">
+          <h3 class="tech-cat-title">Frontend & Mobile</h3>
+          <div class="tech-pills">
+            <span class="tech-pill"><i class="fab fa-angular"></i> Angular</span>
+            <span class="tech-pill"><i class="fab fa-js-square"></i> JavaScript</span>
+            <span class="tech-pill"><i class="fab fa-html5"></i> HTML5</span>
+            <span class="tech-pill"><i class="fab fa-css3-alt"></i> CSS3 / SCSS</span>
+            <span class="tech-pill"><i class="fas fa-mobile-alt"></i> Ionic 7</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 class="tech-cat-title">Backend & BD</h3>
+          <div class="tech-pills">
+            <span class="tech-pill"><i class="fab fa-python"></i> Python</span>
+            <span class="tech-pill"><i class="fas fa-server"></i> Django</span>
+            <span class="tech-pill"><i class="fas fa-bolt"></i> FastAPI</span>
+            <span class="tech-pill"><i class="fas fa-database"></i> SQL / SQLite</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 class="tech-cat-title">Diseño & UX</h3>
+          <div class="tech-pills">
+            <span class="tech-pill"><i class="fab fa-figma"></i> Figma</span>
+            <span class="tech-pill"><i class="fas fa-pencil-ruler"></i> Prototipado</span>
+            <span class="tech-pill"><i class="fas fa-sitemap"></i> Design Systems</span>
+            <span class="tech-pill"><i class="fas fa-eye"></i> Wireframing</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 class="tech-cat-title">Herramientas & Métodos</h3>
+          <div class="tech-pills">
+            <span class="tech-pill"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="tech-pill"><i class="fas fa-chart-bar"></i> Power BI</span>
+            <span class="tech-pill"><i class="fas fa-sync-alt"></i> Scrum</span>
+            <span class="tech-pill"><i class="fas fa-shield-alt"></i> Nmap</span>
+            <span class="tech-pill"><i class="fas fa-table"></i> Excel Avanzado</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== PROCESO UX ===================== -->
+    <section id="ux-process">
+      <div class="section-header">
+        <h2>Mi Proceso <span>UX</span></h2>
+        <p class="section-subtitle">Cómo convierto una idea en una experiencia real</p>
+      </div>
+
+      <div class="ux-steps">
+
+        <div class="ux-step">
+          <div class="step-number">01</div>
+          <div class="step-icon">🔍</div>
+          <h3>Investigar</h3>
+          <p>
+            Entiendo a los usuarios y el contexto del problema. Analizo requerimientos,
+            hago entrevistas o reviso flujos existentes para detectar fricciones reales.
+          </p>
+        </div>
+
+        <div class="ux-connector"><i class="fas fa-arrow-right"></i></div>
+
+        <div class="ux-step">
+          <div class="step-number">02</div>
+          <div class="step-icon">🗺️</div>
+          <h3>Definir</h3>
+          <p>
+            Mapeo flujos de usuario, creo wireframes y defino la arquitectura de
+            información. Todo antes de tocar código.
+          </p>
+        </div>
+
+        <div class="ux-connector"><i class="fas fa-arrow-right"></i></div>
+
+        <div class="ux-step">
+          <div class="step-number">03</div>
+          <div class="step-icon">🎨</div>
+          <h3>Prototipar</h3>
+          <p>
+            Diseño en <strong>Figma</strong> prototipos interactivos con componentes
+            reutilizables, paleta de color, tipografía y design tokens definidos.
+          </p>
+        </div>
+
+        <div class="ux-connector"><i class="fas fa-arrow-right"></i></div>
+
+        <div class="ux-step">
+          <div class="step-number">04</div>
+          <div class="step-icon">⚡</div>
+          <h3>Desarrollar</h3>
+          <p>
+            Implemento el diseño en <strong>Angular / Ionic</strong> con SCSS,
+            asegurando que el código refleje fielmente el prototipo aprobado.
+          </p>
+        </div>
+
+        <div class="ux-connector"><i class="fas fa-arrow-right"></i></div>
+
+        <div class="ux-step">
+          <div class="step-number">05</div>
+          <div class="step-icon">✅</div>
+          <h3>Validar</h3>
+          <p>
+            Pruebo con usuarios reales o compañeros, itero según el feedback
+            y ajusto hasta que la experiencia sea clara y fluida.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================== EXPERIENCIA ===================== -->
     <section id="experience">
       <div class="section-header">
         <h2>Experiencia <span>Laboral</span></h2>
       </div>
       <div class="timeline">
+
         <div class="timeline-item">
           <div class="time-header">
-            <h3>Pasantía Profesional - Ciberseguridad | ClaroVTR</h3>
-            <span>Agosto 2025 - Diciembre 2025[cite: 1]</span>
+            <h3>Pasantía Profesional — Ciberseguridad | ClaroVTR</h3>
+            <span>Agosto 2025 – Diciembre 2025</span>
           </div>
-          <p>Desarrollo de dashboards de riesgos en Power BI y automatización de campañas de phishing con <strong>Python y FastAPI</strong>[cite: 1]. 
-             Implementé escaneos de seguridad con Nmap y procesé logs de SAP para análisis estructurado[cite: 1].</p>
+          <ul class="timeline-bullets">
+            <li>Desarrollo de dashboards de riesgos y vulnerabilidades en <strong>Power BI</strong> y Excel avanzado.</li>
+            <li>Automatización de campañas de concientización phishing con <strong>Python y FastAPI</strong>.</li>
+            <li>Integración de módulos de escaneo de seguridad con <strong>Nmap</strong>.</li>
+            <li>Análisis de correos maliciosos y elaboración de reportes técnicos con trazabilidad de IP y URL.</li>
+            <li>Procesamiento y consolidación de logs SAP con Python para análisis estructurado.</li>
+          </ul>
         </div>
-        
+
         <div class="timeline-item">
           <div class="time-header">
             <h3>Barista | Starbucks Coffee Chile</h3>
-            <span>Noviembre 2024 - Agosto 2025[cite: 1]</span>
+            <span>Noviembre 2024 – Agosto 2025</span>
           </div>
-          <p>Fortalecimiento de habilidades de comunicación, trabajo bajo presión y atención al cliente en entornos de alta demanda[cite: 1].</p>
+          <ul class="timeline-bullets">
+            <li>Atención al cliente en entornos de alta demanda cumpliendo estándares de calidad.</li>
+            <li>Manejo de caja, control de inventario y reposición de productos.</li>
+            <li>Trabajo en equipo y comunicación bajo presión.</li>
+          </ul>
         </div>
+
       </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
+
+    <!-- ===================== EDUCACIÓN ===================== -->
+    <section id="education">
+      <div class="section-header">
+        <h2>Formación <span>Académica</span></h2>
+      </div>
+
+      <div class="education-grid">
+
+        <div class="edu-card edu-main">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <span class="edu-period">2022 – 2026</span>
+            <h3>Ingeniería en Informática</h3>
+            <p class="edu-institution">Duoc UC</p>
+            <p class="edu-desc">
+              Formación en desarrollo de software, bases de datos, análisis de sistemas,
+              metodologías ágiles y diseño de experiencia de usuario. Énfasis en proyectos
+              reales con tecnologías como Angular, Ionic, Python y Power BI.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">📚</div>
+          <div class="edu-info">
+            <span class="edu-period">2020 – 2021</span>
+            <h3>Enseñanza Media (3° – 4° Medio)</h3>
+            <p class="edu-institution">Liceo Alberto Blest Gana</p>
+          </div>
+        </div>
+
+        <div class="edu-card">
+          <div class="edu-icon">📚</div>
+          <div class="edu-info">
+            <span class="edu-period">2018 – 2019</span>
+            <h3>Enseñanza Media (1° – 2° Medio)</h3>
+            <p class="edu-institution">Liceo Poeta Federico García Lorca</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===================== PROYECTOS ===================== -->
     <section id="projects">
       <div class="section-header">
         <h2>Proyectos <span>Destacados</span></h2>
       </div>
       <div class="projects-grid">
-        <!-- Dashboard Kentfood -->
+
         <article class="project-card">
           <div class="project-img">
             <div class="overlay"><button>Ver Detalles</button></div>
@@ -132,11 +340,13 @@
           <div class="project-info">
             <span class="tag">Business Intelligence</span>
             <h3>Dashboard Kentfood</h3>
-            <p>Análisis de ventas mediante procesos ETL y visualización en Power BI[cite: 1].</p>
+            <p>Análisis de ventas mediante procesos ETL con SQL y visualización en Power BI. Identifica productos más vendidos y rendimiento por área.</p>
+            <div class="project-techs">
+              <span>SQL</span><span>Power BI</span><span>ETL</span>
+            </div>
           </div>
         </article>
 
-        <!-- Tienda Tecnológica -->
         <article class="project-card">
           <div class="project-img">
             <div class="overlay"><button>Ver Demo</button></div>
@@ -144,22 +354,155 @@
           <div class="project-info">
             <span class="tag">Mobile</span>
             <h3>Mobile Tech-Store</h3>
-            <p>App en Ionic 7 con carrito de compras y SQLite bajo Scrum[cite: 1].</p>
+            <p>App móvil con carrito de compras, historial de pedidos y formularios integrados con servicios externos. Metodología Scrum.</p>
+            <div class="project-techs">
+              <span>Ionic 7</span><span>Angular</span><span>SQLite</span>
+            </div>
           </div>
         </article>
 
-        <!-- Tienda de Música -->
         <article class="project-card">
           <div class="project-img">
-            <div class="overlay"><button>GitHub</button></div>
+            <div class="overlay"><button>Ver GitHub</button></div>
           </div>
           <div class="project-info">
             <span class="tag">Web</span>
             <h3>Music Platform</h3>
-            <p>E-commerce con Django e integración de API de despachos[cite: 1].</p>
+            <p>E-commerce con carrito de compras, gestión de clientes e integración de API para días feriados y despachos.</p>
+            <div class="project-techs">
+              <span>Django</span><span>JavaScript</span><span>HTML/CSS</span>
+            </div>
           </div>
         </article>
+
+        <article class="project-card">
+          <div class="project-img">
+            <div class="overlay"><button>Ver Detalles</button></div>
+          </div>
+          <div class="project-info">
+            <span class="tag">BPM / Gestión</span>
+            <h3>Sistema BPM Veterinaria</h3>
+            <p>Análisis y rediseño de procesos para clínica veterinaria. Optimización de operación interna y eliminación de tareas redundantes.</p>
+            <div class="project-techs">
+              <span>BPM</span><span>Análisis</span><span>Scrum</span>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
+
+
+    <!-- ===================== CONTACTO ===================== -->
+    <section id="contact">
+      <div class="section-header">
+        <h2>Hablemos <span>✉</span></h2>
+        <p class="section-subtitle">¿Tienes un proyecto o una oportunidad? Escríbeme.</p>
+      </div>
+
+      <div class="contact-wrapper">
+
+        <!-- Info de contacto -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:mariavyeguezp&#64;gmail.com" class="contact-value">mariavyeguezp&#64;gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+            <div>
+              <p class="contact-label">LinkedIn</p>
+              <a href="https://linkedin.com/in/tu-perfil" target="_blank" class="contact-value">linkedin.com/in/tu-perfil</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fab fa-github"></i></div>
+            <div>
+              <p class="contact-label">GitHub</p>
+              <a href="https://github.com/tu-usuario" target="_blank" class="contact-value">github.com/tu-usuario</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Ubicación</p>
+              <span class="contact-value">Independencia, Santiago, RM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <form class="contact-form" (ngSubmit)="onSubmit()" #contactForm="ngForm">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre completo"
+              [(ngModel)]="formData.nombre"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="tu@email.com"
+              [(ngModel)]="formData.email"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input
+              type="text"
+              id="asunto"
+              name="asunto"
+              placeholder="¿De qué se trata?"
+              [(ngModel)]="formData.asunto">
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="Cuéntame sobre tu proyecto o propuesta..."
+              [(ngModel)]="formData.mensaje"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn-main btn-full">
+            Enviar mensaje <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+
+      </div>
+    </section>
+
   </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="logo">Marivick <span>.</span></span>
+      <p>Diseñado & desarrollado con 💜 por María Victoria Yegüez — 2026</p>
+      <div class="footer-links">
+        <a href="https://github.com/tu-usuario" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/tu-perfil" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:mariavyeguezp&#64;gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
 </div>

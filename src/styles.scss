@@ -734,3 +734,501 @@ section {
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+/* ============================================================
+   14. SECTION SUBTITLE
+   ============================================================ */
+.section-subtitle {
+  font-size: clamp(0.88rem, 1.5vw, 1rem);
+  color: rgba($negro, 0.5);
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+/* ============================================================
+   15. TECH STACK
+   ============================================================ */
+.techstack-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+
+  @media (min-width: $bp-xl) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tech-category {
+  background: $blanco;
+  border: 2px solid $negro;
+  border-radius: 20px;
+  padding: 1.4rem 1.3rem;
+
+  @media (min-width: $bp-md) {
+    padding: 1.6rem 1.5rem;
+  }
+}
+
+.tech-cat-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: $negro;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: $gris-claro;
+  color: rgba($negro, 0.8);
+  border: 1.5px solid rgba($negro, 0.1);
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+
+  i { font-size: 0.78rem; color: $morado; }
+
+  &:hover {
+    background: rgba($morado, 0.08);
+    border-color: rgba($morado, 0.3);
+    color: $morado;
+  }
+}
+
+/* ============================================================
+   16. PROCESO UX
+   ============================================================ */
+.ux-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: stretch;
+
+  @media (min-width: $bp-lg) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+.ux-step {
+  flex: 1;
+  background: $blanco;
+  border: 2px solid $negro;
+  border-radius: 20px;
+  padding: 1.5rem 1.3rem;
+  position: relative;
+  transition: transform 0.25s, box-shadow 0.25s;
+
+  .step-number {
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background: $gradiente;
+    color: $blanco;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 0.78rem;
+    padding: 2px 10px;
+    border-radius: 50px;
+    letter-spacing: 0.04em;
+  }
+
+  .step-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.6rem;
+    margin-top: 0.4rem;
+    line-height: 1;
+  }
+
+  h3 {
+    font-size: clamp(0.95rem, 2vw, 1.05rem);
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    font-size: 0.86rem;
+    color: rgba($negro, 0.65);
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba($morado, 0.12);
+    }
+  }
+}
+
+.ux-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba($morado, 0.5);
+  font-size: 1.1rem;
+  padding: 0 0.2rem;
+  flex-shrink: 0;
+
+  /* en móvil la flecha apunta abajo */
+  @media (max-width: #{$bp-lg - 1px}) {
+    transform: rotate(90deg);
+    padding: 0.2rem 0;
+  }
+}
+
+/* ============================================================
+   17. EDUCACIÓN
+   ============================================================ */
+.education-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  max-width: 860px;
+
+  @media (min-width: $bp-md) {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.edu-card {
+  background: $blanco;
+  border: 2px solid rgba($negro, 0.12);
+  border-radius: 20px;
+  padding: 1.4rem 1.3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: border-color 0.25s, box-shadow 0.25s;
+
+  @media (min-width: $bp-md) {
+    padding: 1.6rem 1.5rem;
+  }
+
+  /* La card principal (Duoc UC) ocupa todo el ancho en tablet */
+  &.edu-main {
+    @media (min-width: $bp-md) {
+      grid-column: 1 / -1;
+      border-color: $morado;
+      border-width: 2px;
+    }
+  }
+
+  .edu-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .edu-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .edu-period {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $morado;
+  }
+
+  h3 {
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    margin-bottom: 2px;
+  }
+
+  .edu-institution {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: rgba($negro, 0.55);
+    margin-bottom: 0;
+  }
+
+  .edu-desc {
+    font-size: 0.86rem;
+    color: rgba($negro, 0.68);
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      border-color: rgba($morado, 0.4);
+      box-shadow: 0 6px 24px rgba($morado, 0.08);
+    }
+  }
+}
+
+/* ============================================================
+   18. TIMELINE — bullets
+   ============================================================ */
+.timeline-bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 0.5rem;
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: clamp(0.83rem, 1.5vw, 0.92rem);
+    color: rgba($negro, 0.72);
+    line-height: 1.55;
+
+    &::before {
+      content: '▸';
+      color: $morado;
+      font-size: 0.75rem;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+  }
+}
+
+/* ============================================================
+   19. PROYECTOS — tech chips
+   ============================================================ */
+.project-techs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.75rem;
+
+  span {
+    background: rgba($negro, 0.06);
+    color: rgba($negro, 0.7);
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 50px;
+    letter-spacing: 0.03em;
+  }
+}
+
+/* ============================================================
+   20. CONTACTO
+   ============================================================ */
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 980px;
+
+  @media (min-width: $bp-lg) {
+    grid-template-columns: 1fr 1.6fr;
+    gap: 3.5rem;
+    align-items: start;
+  }
+}
+
+/* Info lateral */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+
+  .contact-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    background: rgba($morado, 0.08);
+    border: 1.5px solid rgba($morado, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    i {
+      color: $morado;
+      font-size: 0.95rem;
+    }
+  }
+
+  .contact-label {
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba($negro, 0.4);
+    margin-bottom: 2px;
+  }
+
+  .contact-value {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $negro;
+    transition: color 0.2s;
+    display: block;
+
+    &:hover { color: $morado; }
+  }
+}
+
+/* Formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: rgba($negro, 0.7);
+    letter-spacing: 0.02em;
+  }
+
+  input,
+  textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    color: $negro;
+    background: $blanco;
+    border: 2px solid rgba($negro, 0.12);
+    border-radius: 12px;
+    padding: 11px 14px;
+    width: 100%;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    resize: none;
+    outline: none;
+
+    &::placeholder { color: rgba($negro, 0.35); }
+
+    &:focus {
+      border-color: $morado;
+      box-shadow: 0 0 0 3px rgba($morado, 0.1);
+    }
+  }
+
+  textarea { line-height: 1.6; }
+}
+
+.btn-full {
+  width: 100%;
+  justify-content: center;
+}
+
+/* ============================================================
+   21. FOOTER
+   ============================================================ */
+.footer {
+  background: $negro;
+  color: rgba($blanco, 0.6);
+  padding: 2rem 6%;
+
+  @media (min-width: $bp-md) {
+    padding: 2.5rem 10%;
+  }
+
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    text-align: center;
+
+    @media (min-width: $bp-md) {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: $blanco;
+    -webkit-text-fill-color: unset;
+    background: none;
+
+    span {
+      background: $gradiente;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin: 0;
+    color: rgba($blanco, 0.5);
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 14px;
+
+    a {
+      color: rgba($blanco, 0.5);
+      font-size: 1rem;
+      transition: color 0.2s;
+
+      &:hover { color: $turquesa; }
+    }
+  }
+}
+
+/* ============================================================
+   22. FORM FEEDBACK
+   ============================================================ */
+.form-feedback {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-size: 0.88rem;
+  font-weight: 600;
+
+  i { font-size: 0.9rem; }
+}
+
+.form-success {
+  background: rgba(0, 200, 120, 0.1);
+  color: #0a7c4f;
+  border: 1.5px solid rgba(0, 200, 120, 0.3);
+}
+
+.form-error {
+  background: rgba(255, 60, 60, 0.08);
+  color: #c0392b;
+  border: 1.5px solid rgba(255, 60, 60, 0.25);
+}

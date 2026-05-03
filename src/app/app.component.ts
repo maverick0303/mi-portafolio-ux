@@ -1,13 +1,43 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [FormsModule, CommonModule]
 })
 export class AppComponent {
-  title = 'mi-portafolio-ux';
+
+  formData = {
+    nombre: '',
+    email: '',
+    asunto: '',
+    mensaje: ''
+  };
+
+  formEnviado = false;
+  formError = false;
+
+  onSubmit(): void {
+    if (!this.formData.nombre || !this.formData.email || !this.formData.mensaje) {
+      this.formError = true;
+      return;
+    }
+
+    this.formError = false;
+
+    // Aquí conectas con tu servicio de envío (EmailJS, Formspree, etc.)
+    console.log('Formulario enviado:', this.formData);
+
+    this.formEnviado = true;
+
+    // Reset después de 4 segundos
+    setTimeout(() => {
+      this.formEnviado = false;
+      this.formData = { nombre: '', email: '', asunto: '', mensaje: '' };
+    }, 4000);
+  }
 }
